@@ -1,5 +1,5 @@
 async function main() {
-    const [deployer] = await ethers.getSigners();
+    const [owner] = await ethers.getSigners();
     const Lottery = await ethers.getContractFactory('Lottery');
     const lottery = await Lottery.deploy();
 
